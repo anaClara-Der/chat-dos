@@ -1,0 +1,32 @@
+{
+  "name": "chat-dos",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:front": "parcel serve ./frontend/src/index.html",
+    "dev:back": "ts-node ./backend/dev.ts",
+    "build:front": "parcel build ./frontend/src/index.html",
+    "build:back": "tsc",
+    "build": "npm run build:front && npm run build:back",
+    "start": "node ./backend/index.js",
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vaadin/router": "^1.7.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase": "^8.7.1",
+    "firebase-admin": "^11.11.0",
+    "process": "^0.11.10",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.2",
+    "parcel": "^2.10.3",
+    "typescript": "^5.3.2"
+  },
+  "description": ""
+}

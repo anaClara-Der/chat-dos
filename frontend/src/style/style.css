@@ -1,0 +1,38 @@
+:root {
+    --darkToggle: linear-gradient(0.25turn, #378fe6, #3eda82);
+    --detalles: linear-gradient(0.25turn, #fdc468, #df4996);
+    --limeGreen: hsl(163, 72%, 41%);
+    --White: hsl(0, 0%, 100%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --lightToggle: hsl(230, 22%, 74%);
+    --darkGrayishBlue: hsl(228, 12%, 44%);
+    --lightGrayish: hsl(227, 47%, 96%);
+  
+    --brightRed: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+  
+    --youTube: hsl(348, 97%, 39%);
+    /*fondos*/
+  
+    /*Dark*/
+    --veryDarkBlue: hsl(230, 17%, 14%);
+    --veryDarkBlueDos: hsl(232, 19%, 15%);
+    --darkDesaturated: hsl(228, 28%, 20%);
+    --desaturated: hsl(228, 34%, 66%);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+  .root {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
