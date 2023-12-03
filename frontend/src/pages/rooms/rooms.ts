@@ -33,15 +33,12 @@ class Rooms extends HTMLElement{
             const target = e.target as any;
             //Ingresar a room existente
             if(select.value == "existRoom"){
-                console.log('estoy en ingresar a room')
                 const nroRoom = target.room.value; 
                 state.ingresarRoom(nroRoom)
                 .then(()=>{
                     Router.go("/chat");
                 })
             }else{ //Crear una nueva room
-                console.log('estoy en la creación');
-                
                 state.crearRoom()
                 .then(()=>{//Lo hago con promesa para que solo se rediriga a la nueva página una vez que tenga ya guardado el numero de chat guardado en el state
                     Router.go("/chat");
@@ -133,7 +130,16 @@ class Rooms extends HTMLElement{
             .rooms-p{
                 font-family: 'Roboto', sans-serif;
                 margin: 0px 15px;
+                border: solid 1px var(--limeGreen);
+                padding: 5px; 
             }
+            .rooms-p:focus{
+                outline:none;
+                border-bottom: 2px solid var(--veryDarkBlue);
+              }
+              .rooms-p:hover{
+                background-color:var(--lightGrayish);
+              }
             .container-p{
                 display: flex;
                 flex-wrap: wrap;

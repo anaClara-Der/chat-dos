@@ -1,7 +1,7 @@
 import { log } from "console";
 import { database } from "../rtdb";
 const API_BASE_DATOS =  process.env.API || "http://localhost:3000";
-console.log('el numero: ', process.env.API);
+
 
 import { Router } from "@vaadin/router";
 const state = {

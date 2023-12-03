@@ -1,5 +1,6 @@
 import * as admin from "firebase-admin";
-import * as serviceAccount from "../key.json"; 
+import * as serviceAccount from "./key.json"; 
+
 
 
 
