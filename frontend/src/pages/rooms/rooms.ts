@@ -130,7 +130,7 @@ class Rooms extends HTMLElement{
             }
             .rooms-p{
                 font-family: 'Roboto', sans-serif;
-                margin: 0px 15px;
+                margin: 5px 15px;
                 border: solid 1px var(--limeGreen);
                 padding: 5px; 
                 cursor: pointer; 
@@ -168,7 +168,7 @@ class Rooms extends HTMLElement{
                     <button class="btn-in">Ingresar</button>
                 </form>
                 <div class="container--rooms">
-                    <h2 class="room-subt">Rooms</h2>
+                    <h2 class="room-subt">Rooms existentes</h2>
                     <div class="container-p">${roomsList.map((e)=>{
                         return `<p class="rooms-p">${e}</p>`  
                     }).join("")}</div>
