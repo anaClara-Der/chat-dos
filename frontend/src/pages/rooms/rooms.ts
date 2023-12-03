@@ -86,6 +86,7 @@ class Rooms extends HTMLElement{
                 font-size: 23px;
                 border-radius: 5px;
                 border: 2px solid var(--darkGrayishBlue);
+                
             }
             .input-user:hover{
                 background: var(--lightGrayish);
@@ -132,14 +133,15 @@ class Rooms extends HTMLElement{
                 margin: 0px 15px;
                 border: solid 1px var(--limeGreen);
                 padding: 5px; 
+                cursor: pointer; 
             }
             .rooms-p:focus{
                 outline:none;
-                border-bottom: 2px solid var(--veryDarkBlue);
-              }
-              .rooms-p:hover{
+                border-bottom: 2px solid var(--veryDarkBlue);   
+            }
+            .rooms-p:hover{
                 background-color:var(--lightGrayish);
-              }
+            }
             .container-p{
                 display: flex;
                 flex-wrap: wrap;
